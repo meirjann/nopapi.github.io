@@ -6,6 +6,7 @@
     color: seashell;
 }
 
+
 .loader::before,
 .loader::after {
     content: '';
@@ -21,6 +22,7 @@
     transform: rotateX(45deg) rotateY(25deg);
 }
 
+.l1,
 .l1::before,
 .l1::after {
     animation: loader-anim 1s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
@@ -46,10 +48,10 @@
 
 @keyframes loader-anim {
     0%, 100% {
-        transform: translateZ(calc(20px) * -1) scale(0,5);
+        transform: translateZ(calc(33px * -1)) scale(0.5);
     }
     55% {
-        transform: translateZ(calc(20px));
+        transform: translateZ(33px);
     }
 }
 
@@ -68,8 +70,8 @@
     display: grid;
 }
 
-.container:hover .item {
-    opacity: 0.3;
+.container .item {
+    opacity: 0.7;
 }
 
 .container:hover .item:hover {
